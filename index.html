@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="estilo.css">
+    <title>Esdras Desarrollador</title>
+</head>
+
+<body>
+    <!-- SECCION I N I C I O -->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>Esdras Abel Sapón Díaz</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <li><a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a></li>
+                            <li><a href="#portfolio" onclick="seleccionar(this)">PORTAFOLIO</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- Icono del menu responsive -->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+
+                    <div class="redes">
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+                    </div>
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenidos</p>
+                <h2>Soy <span>Esdras Abel Sapón Díaz</span>, Desarrollador</h2>
+                <p class="descripcion">Realizo aplicaciones desktop, móvil y web. </p>
+                <a href="#portfolio">Ir a Portafolio</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION S O B R E M I -->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="img/foto.jpg" alt="">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre Mi</p>
+            <h2>Hola, Soy <span>Esdras Abel Sapón Díaz</span> </h2>
+            <h3>Desarrollador</h3>
+            <p>Realizo aplicaciones desktop, móvil y web. Los lenguajes de programación y tecnologías que utilizo son:
+                Java, Spring, HTML, CSS, Javascript, Dart, Flutter, C++, .NET, SQL, manejo de APIS.
+
+            </p>
+            <p>Es un gusto ponerme a tus órdenes con cualquier proyecto que tengas en mente.</p>
+        </div>
+    </section>
+
+    <!-- SECCION S E R V I C I O S -->
+    <section id="servicios">
+        <h3 class="titulo-seccion">MIS SERVICIOS</h3>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"> <i class="fa-solid fa-code"></i></span>
+                <h4>Páginas web Responsivas</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                    <li>Java</li>
+                    <li>SQL</li>
+                </ul>
+                <p>Las páginas web son responsivas (adaptables a cualquier tipo de dispositivo), usando para el frontend las tecnologías: HTML, CSS y Javascript. Para el backend se usaría las tecnologías: Java y SQL.</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-file-code"></i></span>
+                <h4>Aplicaciones de Escritorio (Desktop)</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Java</li>
+                    <li>C++</li>
+                    <li>.NET</li>
+                    <li>SQL</li>
+                </ul>
+                <p>Las aplicaciones de escritorio te las podemos realizar utilizando: Java, C++ o .NET. Si necesitas llevar el control de datos o información 
+                    se puede hacer la conexión a una base de datos utilizando SQL.
+                </p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-bars"></i></span>
+                <h4>Aplicaciones móviles</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Dart</li>
+                    <li>Flutter</li>
+                    <li>SQLite</li>
+                    <li>API</li>
+                </ul>
+                <p>Todas las aplicaciones que se realizan son compatibles para Android e iOS. Se utiliza el lenguaje de programación Dart y su framework Flutter. 
+                    Si deseas llevar el control de datos se puede hacer la conexión a base de datos utilizando SQLite o se podría conectar a un servidor
+                    utilizando una API
+                </p>
+            </div>
+        </div>
+        
+        </div>
+    </section>
+
+    
+    <!-- SECCION PORTAFOLIO -->
+    <section id="portfolio">
+        <h3 class="titulo-seccion">Mis Proyectos</h3>
+        <br>
+        <h4 class="subtitulo-seccion">**Todos estos proyectos han sido vendidos a diferentes clientes y empresas/negocios**</h4>
+        <br>
+        <br>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto1.jpg" alt="">
+                <div class="info">
+                    <h4>Formain (Aplicación Desktop)</h4>
+                    <p>Este programa es utilizado por 3 empresas, permite gestionar y administrar la empresa o negocio. 
+                        Está desarrollado totalmente en Java y SQL.
+                    </p>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto2.jpg" alt="">
+                <div class="info">
+                    <h4>Servicios Contables Ola (Aplicación Desktop)</h4>
+                    <p>Programa creado para la oficina contable "Ola" ubicado frente al parque central de San Antonio Suchitepéquez. 
+                        La funcionalidad de este programa es que dicho negocio pueda llevar los datos de sus clientes y controlar las fechas 
+                        de pago. Este programa fue desarrollado en Java y SQL.
+                    </p>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto7.jpg" alt="">
+                <div class="info">
+                    <h4>Portafolio Propio</h4>
+                    <p>Página web responsiva (esta página) para dar a conocer mis proyectos de programación y que me puedan contactar.
+                        Las tecnologías utilizadas son: HTML, CSS y Javascript.
+                    </p>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto3.jpg" alt="">
+                <div class="info">
+                    <h4>Supercampeones</h4>
+                    <p>Este programa fue creado para llevar el registro y control de varios equipos de fútbol, y saber cuándo se van a enfrentar. 
+                        Las tecnologías utilizadas son: C++, .NET y SQL.
+                    </p>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto4.jpg" alt="">
+                <div class="info">
+                    <h4>Control Menu</h4>
+                    <p>Esta aplicación móvil fue creada para un comedor ubicado en Mazatenango, con el fin de registrar los platillos que preparan y saber los precios. 
+                        Las tecnologías utilizadas son: Dart, Flutter, SQLite, gestor de estado BloC_Provider.
+                    </p>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto5.jpg" alt="">
+                <div class="info">
+                    <h4>Movies Info</h4>
+                    <p>Esta aplicación móvil fue creada para ver las películas populares en la actualidad. Al entrar a una cartelera muestra información de dicha película y los actores.  
+                        Las tecnologías utilizadas son: Dart, Flutter, manejo de API de MovieDB, gestor de estado BloC_Provider.
+                    </p>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto6.jpg" alt="">
+                <div class="info">
+                    <h4>Conociendo Guate</h4>
+                    <p>Esta aplicación móvil actualmente se encuentra en desarrollo, servirá para dar a conocer a los extranjeros los lugares y municipios bonitos de Guatemala. . 
+                        Las tecnologías utilizadas son: Dart, Flutter, API propia en desarrollo, gestor de estado BloC.
+                    </p>
+                </div>
+            </div>
+            <br>
+            <br>
+            
+        </div>
+        
+    </section>
+
+    <!-- SECCTION C O N T A C T O -->
+    <section id="contacto">
+        <h3 class="titulo-seccion">Contactanos ahora</h3>
+        <div class="contenedor-form">
+            <form action="enviar.php" method="post">
+                <div class="fila mitad">
+                    <input type="text" placeholder="Nombre Completo *" class="input-mitad" name = "nombre" required>
+                    <input type="email" placeholder="Dirección de Email *" class="input-mitad" name = "correo" required>
+                </div>
+                <div class="fila">
+                    <input type="text" placeholder="Asunto... *" class="input-full" name = "asunto" required>
+                </div>
+                <div class="fila">
+                    <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Tu Mensaje...*" class="input-full" required></textarea>
+                </div>
+
+                <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+            </form>
+        </div>
+    </section>
+
+    <!-- SECCION FOOTER -->
+    <footer>
+        <p>Todos los derechos reservados - 2022</p>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
