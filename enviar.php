@@ -17,7 +17,7 @@ $carta .= "Enviado el: " . date('d/m/Y', time());
 
 
 //Send msj
-mail($destinario, $asunto, utf8_decode($carta), $header);
+mail($destinario, $asunto, $carta);
 header('Location:index.html');
 
 ?>
